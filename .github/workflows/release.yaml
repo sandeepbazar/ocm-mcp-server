@@ -89,7 +89,7 @@ jobs:
         # Tag pin, not SHA: this is a Docker-based action that resolves its
         # container image from the git ref name, so hash-pinning breaks it
         # (documented upstream). The tag is the strongest supported pin.
-        uses: pypa/gh-action-pypi-publish@v1.14.1
+        uses: pypa/gh-action-pypi-publish@v1.14.2
         with:
           # Make tag-triggered re-runs idempotent: if this exact version is
           # already on PyPI, succeed instead of failing the whole release chain.
